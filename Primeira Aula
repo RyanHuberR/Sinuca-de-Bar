@@ -13,3 +13,19 @@ B-2) Dados públicos são informações que estão disponíveis ao público e n�
 
 
 Arquivo: é um conjuntop de dados, o que diferencia um arquivo do outro é a regra aplicada nele, outra diferença é a permissão de uso
+
+
+
+carros = ['Rolls-Royce','Lamborghini','Aston Martin','Porsche','Ferrari','Audi','McLaren','Mercedes-Benz','Pagani ','Bugatti']
+for carro in carros :
+    print(carro)
+
+
+x = 5
+
+if x > 10:
+    print("x é maior que 10")
+elif x == 5:
+    print("x é igual a 5")
+else:
+    print("x é menor que 10")
