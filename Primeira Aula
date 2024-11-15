@@ -14,119 +14,172 @@ B-2) Dados públicos são informações que estão disponíveis ao público e n�
 
 Arquivo: é um conjuntop de dados, o que diferencia um arquivo do outro é a regra aplicada nele, outra diferença é a permissão de uso
 
+Python Diferenças:Sintaxe Simples: Python tem uma sintaxe limpa e fácil de ler, o que a torna uma ótima linguagem para iniciantes. Tipagem Dinâmica: Não é necessário declarar o tipo de uma variável. O Python determina o tipo automaticamente.Uso Geral: É usada para uma ampla gama de aplicações, desde scripts simples até sistemas complexos e aprendizado de máquina. 2. Java Diferenças:Sintaxe Verbose: Java tem uma sintaxe mais detalhada e é fortemente tipada. É mais rigorosa em termos de declaração de tipos e estrutura. Compilação: O código Java é compilado em bytecode que roda na Java Virtual Machine (JVM), permitindo portabilidade entre diferentes plataformas. Orientação a Objetos: Java é uma linguagem orientada a objetos, o que significa que quase tudo é tratado como um objeto. 3. JavaScript Diferenças: Desenvolvimento Web: JavaScript é amplamente usado para desenvolvimento web, tanto no lado do cliente quanto no lado do servidor (com Node.js). Tipagem Dinâmica: Similar ao Python, JavaScript é dinamicamente tipado. Execução em Navegadores: JavaScript é executado diretamente no navegador, o que o torna essencial para desenvolvimento front-end. Resumo das Principais Diferenças - Python: Simples e legível, Versátil, ideal para scripts, automação e ciência de dados, utilizado para interpretação.  Java: Verboso e estrito, Aplicações empresariais e móveis,utilizado paracompilação para bytecode e execução na JVM. JavaScript: Flexível e integrado com HTML/CSS, Desenvolvimento web front-end e back-end, utilizado para Execução no navegador e servidor (Node.js).
+
+exemplo de codigo python : print('Hello world!') 
+
+exemplo de codigo java: import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+// The main method must be in a class named "Main".
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+exemplo de codigo javaScript: console.log("Hello world!");
 
 
-carros = ['Rolls-Royce','Lamborghini','Aston Martin','Porsche','Ferrari','Audi','McLaren','Mercedes-Benz','Pagani ','Bugatti']
-for carro in carros :
-    print(carro)
+Estrutura de Repetição:
 
+1ª) for i in range(7):
+  print (i)
 
-x = 5
+2º) count = 3
+while count < 2:
+    print (conut)
+    count +=1
 
+Estrutura de Tomada de Decisão:
+
+1ª) x = 10
 if x > 10:
     print("x é maior que 10")
-elif x == 5:
-    print("x é igual a 5")
+elif x ==10:
+    print ("x é igual a 10")
+
+2ª)x = 3
+if x> 9:
+    print("x é maior que 9")
+elif x == 9:
+    print("x é igual a 9")
 else:
-    print("x é menor que 10")
+    print("x é menor que 9")
+
+def bubble_sort(arr):
+    n = len(arr)
+    # Percorre todos os elementos do array
+    for i in range(n):
+        # Últimos i elementos já estão na posição correta
+        for j in range(0, n - i - 1):
+            # Percorre o array do início até o penúltimo elemento não ordenado
+            if arr[j] > arr[j + 1]:
+                # Troca se o elemento encontrado for maior que o próximo elemento
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+# Exemplo de uso
+lista = [64, 34, 25, 12, 22, 11, 90]
+sorted_lista = bubble_sort(lista)
+print("Lista ordenada:", sorted_lista)
 
 
-Crie uma função que imprima as informações de três parâmetros:
-nome, idade, e cidade, de maneira formatada. Use os argumentos sep
-e end da função print( ) para organizar a saída.
-Exemplo Saída:
-Nome: Alice - Idade: 25 - Cidade: São Paulo!
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+def extrair_vogais(texto):
+    # Definindo o conjunto de vogais
+    vogais = "aeiouAEIOU"
+    # Filtrando e coletando as vogais presentes no texto
+    vogais_encontradas = [char for char in texto if char in vogais]
+    # Retornando a lista de vogais encontradas como uma string
+    return ''.join(vogais_encontradas)
 
-def imprimir_informacoes(nome, idade, cidade):
-    print("Nome:", nome, sep="", end=" - ")
-    print("Idade:", idade, sep="", end=" - ")
-    print("Cidade:", cidade, sep="", end="!\n")
+# Exemplo de uso
+texto = "Sol radiante, risos vibrantes!"
+vogais = extrair_vogais(texto)
+print("Vogais encontradas:", vogais)
+Try programiz.pro
+Vogais encontradas: oaiaeioiae
 
-# Exemplo de uso:
-imprimir_informacoes("Alice", 25, "São Paulo")
-
-
-
-Escreva uma função que peça ao usuário dois números e a operação
-desejada ('+', '-', '*' ou '/'). Sua função deve calcular e imprimir o
-resultado da operação especificada
-
-# Solicita ao usuário que digite dois números reais
-num1 = float(input("Digite o primeiro número real: "))
-num2 = float(input("Digite o segundo número real: "))
-# Verifica qual é o maior número
-if num1 > num2:
-    maior = num1
-    menor = num2
-else:
-    maior = num2
-    menor = num1
-# Calcula a diferença entre o maior e o menor valor
-diferenca = maior - menor
-# Mostra na tela o resultado
-print(f"{maior:.2f} - {menor:.2f} = {diferenca:.2f}")
+=== Code Execution Successful ===
 
 
+todos os codigos ficam 
+Try programiz.pro
+Vogais encontradas: oaiaeioiae
+Lista ordenada: [11, 12, 22, 25, 34, 64, 90]
+
+=== Code Execution Successful ===
+
+segue link com codigos de forma separada e prints em links https://github.com/CarlosfelipeDuran/777bank/blob/main/vogais   /    https://github.com/CarlosfelipeDuran/777bank/blob/main/sequencia%20bubble%20sort  /  
 
 
-Crie uma função que peça ao usuário para digitar itens de uma lista
-de compras, separados por vírgula. Armazene esses itens em uma lista
-e, ao final, imprima todos os itens em linhas separadas usando um
-laço.
-Exemplo de Entrada:
-Digite os itens da lista de compras: leite, ovos, pão, manteiga
-Exemplo de Saída:
-Item 1: leite
-Item 2: ovos
+semana 6
+1 questão: print("carlos felipe duran", "21", "rio de janeiro", sep="; ")
+    
+carlos felipe duran; 21; rio de janeiro
+
+2 questão 
+def calcular_somar():
+    num1 = float(input("pão: "))
+    num2 = float (input("canre:"))
+    num3 = float (input("coca cola:"))
+    resultado = num1 + num2 + num3
+    print("resultado:", resultado)
+    
+    
+    
+calcular_somar()
+pão: 2
+canre:4
+coca cola:2
+resultado: 8.0
+
+=== Code Execution Successful ===
+
+
+3 questão 
+
+def listar_compras():
+  itens = input("Digite os itens da lista de compras (separados por vígula): ")
+  lista = [item.strip() for item in itens.split(',')]
+  for i, item in enumerate(lista, start=1):
+    print(f"Item {i}: {item}")
+
+listar_compras()
+Digite os itens da lista de compras (separados por vígula): carne, ovo, pão
+Item 1: carne
+Item 2: ovo
 Item 3: pão
-Item 4: manteiga
 
-def criar_lista_de_compras():
-    itens = input("Digite os itens da lista de compras: ")
-    lista_de_compras = [item.strip() for item in itens.split(",")]
-
-    for i, item in enumerate(lista_de_compras, start=1):
-        print(f"Item {i}: {item}")
-
-# Exemplo de uso:
-criar_lista_de_compras()
+=== Code Execution Successful ===
 
 
-
-
-
-Faça uma função que solicite ao usuário a temperatura em graus
-Celsius, converta-a para Fahrenheit e imprima o resultado. A fórmula
-de conversão é: (Celsius * 9/5) + 32.
+4 questão
 
 def converter_celsius_para_fahrenheit():
     celsius = float(input("Digite a temperatura em graus Celsius: "))
     fahrenheit = (celsius * 9/5) + 32
+    print(f"A temperatura em Fahrenheit é: {fahrenheit}")
 
-    print(f"A temperatura em graus Fahrenheit é: {fahrenheit:.2f}")
-
-# Exemplo de uso:
 converter_celsius_para_fahrenheit()
+Digite a temperatura em graus Celsius: 35
+A temperatura em Fahrenheit é: 95.0
 
+=== Code Execution Successful ===
 
+5 questão
 
-
-
-Escreva uma função que continue a pedir ao usuário para digitar
-nomes até que o nome 'sair' seja digitado. Ao final, o programa deve
-imprimir todos os nomes digitados, cada um em uma linha
 
 def coletar_nomes():
-    nomes = []
+    nomes = [] 
 
     while True:
-        nome = input("Digite um nome (ou 'sair' para finalizar): ")
-        if nome.lower() == 'sair':
-            break
-        nomes.append(nome)
+        nome = input("Digite um nome (ou 'sair' para terminar): ")
+        if nome == 'sair':
+            break  
+        nomes.append(nome)  
 
-    for i, nome in enumerate(nomes, start=1):
-        print(f"Nome {i}: {nome}")
+    for nome in nomes:
+        print(nome)
 
-# Exemplo de uso:
 coletar_nomes()
+Digite um nome (ou 'sair' para terminar): carlos
+Digite um nome (ou 'sair' para terminar): joão
+Digite um nome (ou 'sair' para terminar): sair
+carlos
+joão
+
+=== Code Execution Successful ===
